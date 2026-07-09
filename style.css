@@ -91,3 +91,236 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('./assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.italic-text {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* ডেসক্রিপশন টেক্সট স্টাইল */
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e5e7eb;
+    max-width: 680px;
+    margin: 0 auto 40px auto;
+}
+
+.btn-hero-register {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-hero-register:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-hero-register:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 38px;
+    }
+    .hero-description {
+        font-size: 16px;
+    }
+    .btn-hero-register {
+        padding: 12px 32px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Speakers Section Styles --- */
+.speakers-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.speakers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* সেকশনের মেইন টাইটেল */
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 48px;
+    letter-spacing: -0.5px;
+}
+
+/* ২ কলাম বিশিষ্ট গ্রিড লেআউট */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px; /* কার্ডগুলোর ভেতরের গ্যাপ */
+}
+
+/* স্পিকার কার্ড স্টাইল */
+.speaker-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden; /* ভেতরের ইমেজ বা এলিমেন্ট যাতে কোনা দিয়ে বের না হয়ে যায় */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-4px); /* হোভার করলে হালকা উপরে উঠবে */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* কার্ডের ইমেজ এরিয়া */
+.card-image-box {
+    width: 100%;
+    height: 280px; /* ইমেজের ফিক্সড উচ্চতা */
+    overflow: hidden;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ইমেজ যাতে ডিসটর্ট বা চ্যাপ্টা না হয় */
+    object-position: center;
+}
+
+/* কার্ডের ভেতরের কন্টেন্ট এরিয়া */
+.card-content {
+    padding: 24px;
+}
+
+/* ক্যাটাগরি ট্যাগ */
+.speaker-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+/* স্ক্রিনশট অনুযায়ী আলাদা ট্যাগের কালার কোড */
+.tag-ai { color: #2563eb; }
+.tag-cloud { color: #2563eb; }
+.tag-frontend { color: #2563eb; }
+.tag-security { color: #2563eb; }
+
+/* স্পিকারের নাম */
+.speaker-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+/* স্পিকারের রোল/পদবি */
+.speaker-role {
+    font-size: 14px;
+    color: #6b7280; /* হালকা গ্রে কালার */
+    font-weight: 400;
+}
+
+/* --- রেসপন্সিভনেস (ট্যাবলেট ও মোবাইল) --- */
+@media (max-width: 900px) {
+    .speakers-grid {
+        grid-template-columns: 1fr; /* মাঝারি বা ছোট স্ক্রিনে ১ কলামে চলে আসবে */
+        gap: 24px;
+    }
+    
+    .card-image-box {
+        height: 24px; /* ছোট স্ক্রিনে হাইট কিছুটা কমানো */
+        height: 250px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}
