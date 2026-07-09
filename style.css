@@ -1,3 +1,93 @@
-body{
-    background-color: green;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.site-header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb; /* নিচের হালকা বর্ডার */
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 45px;
+    object-fit: contain;
+}
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #111827;
+}
+
+.btn-register {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-register:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-register:active {
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
