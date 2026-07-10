@@ -1,3 +1,4 @@
+/* --- create by Anisur Rahman --- */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
 .site-header {
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb; /* নিচের হালকা বর্ডার */
+    border-bottom: 1px solid #e5e7eb;
     padding: 15px 0;
 }
 
@@ -133,7 +134,6 @@ body {
     font-weight: 700;
 }
 
-/* ডেসক্রিপশন টেক্সট স্টাইল */
 .hero-description {
     font-size: 18px;
     line-height: 1.6;
@@ -590,17 +590,16 @@ body {
 /* --- FAQ Section Styles --- */
 .faq-section {
     width: 100%;
-    background-color: #f8fafc; /* হালকা অফ-হোয়াইট ব্যাকগ্রাউন্ড */
+    background-color: #f8fafc;
     padding: 100px 0;
 }
 
 .faq-container {
-    max-width: 800px; /* কন্টেন্ট এরিয়া সুন্দর দেখানোর জন্য একটু ন্যারো করা */
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-/* টাইটেল এবং সাবটাইটেল */
 .faq-title {
     text-align: center;
     font-size: 42px;
@@ -617,14 +616,12 @@ body {
     margin-bottom: 60px;
 }
 
-/* FAQ লিস্টের মেইন বক্স */
 .faq-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* প্রতিটা FAQ আইটেম বক্স */
 .faq-item {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
@@ -634,12 +631,10 @@ body {
     transition: all 0.3s ease;
 }
 
-/* চেকবক্স হাইড করে রাখার জন্য */
 .faq-toggle {
     display: none;
 }
 
-/* প্রশ্ন বা লেবেল এরিয়া */
 .faq-question {
     display: flex;
     justify-content: space-between;
@@ -654,10 +649,9 @@ body {
 }
 
 .faq-question:hover {
-    color: #2563eb; /* হোভার করলে কোশ্চেন ব্লু হবে */
+    color: #2563eb;
 }
 
-/* ডান পাশের প্লাস (+) আইকন ডিজাইন */
 .faq-icon {
     position: relative;
     width: 20px;
@@ -673,7 +667,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* প্লাস চিহ্নের অনুভূমিক রেখা */
 .faq-icon::before {
     top: 9px;
     left: 0;
@@ -681,7 +674,6 @@ body {
     height: 2px;
 }
 
-/* প্লাস চিহ্নের উলম্ব রেখা */
 .faq-icon::after {
     top: 0;
     left: 9px;
@@ -689,43 +681,36 @@ body {
     height: 100%;
 }
 
-/* উত্তর বা অ্যানসার এরিয়া (ডিফল্ট অবস্থায় হাইড করা) */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out; /* স্মুথ ওপেনিং অ্যানিমেশন */
+    transition: max-height 0.3s ease-out;
     background-color: #ffffff;
 }
 
 .faq-answer p {
-    padding: 0 24px 24px 24px; /* নিচের প্যাডিং দিয়ে টেক্সট সুন্দরভাবে বসানো */
+    padding: 0 24px 24px 24px;
     font-size: 15px;
     line-height: 1.6;
     color: #475569;
 }
 
-/* --- ট্রিকস: যখন চেকবক্স চেকড হবে --- */
-
-/* ১. প্লাস আইকনটি মাইনাস (-) চিহ্নে রূপান্তরিত হবে */
 .faq-toggle:checked + .faq-question .faq-icon {
     transform: rotate(180deg);
 }
 
 .faq-toggle:checked + .faq-question .faq-icon::after {
-    opacity: 0; /* উলম্ব রেখা গায়েব হয়ে যাবে, শুধু অনুভূমিক থাকবে */
+    opacity: 0;
 }
 
-/* ২. উত্তরটি স্মুথলি নিচে নেমে আসবে */
 .faq-toggle:checked ~ .faq-answer {
-    max-height: 200px; /* কন্টেন্ট অনুযায়ী আনুমানিক সর্বোচ্চ হাইট */
+    max-height: 200px;
 }
 
-/* ৩. একটি একটিভ বর্ডার কালার ইফেক্ট */
 .faq-toggle:checked ~ .faq-question {
     color: #2563eb;
 }
 
-/* --- রেসপন্সিভনেস --- */
 @media (max-width: 768px) {
     .faq-title {
         font-size: 32px;
@@ -795,7 +780,6 @@ body {
     padding: 0 24px;
 }
 
-/* টাইটেল এবং সাবটাইটেল */
 .venue-title {
     text-align: center;
     font-size: 42px;
@@ -812,7 +796,6 @@ body {
     margin-bottom: 60px;
 }
 
-/* ২-কলাম গ্রিড লেআউট */
 .venue-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -820,7 +803,6 @@ body {
     align-items: center;
 }
 
-/* বাম পাশের তথ্য কার্ডগুলো */
 .venue-info {
     display: flex;
     flex-direction: column;
@@ -854,7 +836,6 @@ body {
     line-height: 1.5;
 }
 
-/* ডান পাশের ম্যাপ ডিজাইন */
 .venue-map {
     width: 100%;
     height: 100%;
@@ -865,8 +846,7 @@ body {
     width: 100%;
     height: 100%;
     min-height: 380px;
-    background-color: #cbd5e1; /* ম্যাপের ব্যাকগ্রাউন্ড কালার */
-    /* ম্যাপের গ্রিড লাইনের মতো একটি ব্যাকগ্রাউন্ড টেক্সচার ইফেক্ট */
+    background-color: #cbd5e1;
     background-image: radial-gradient(#94a3b8 1px, transparent 1px);
     background-size: 20px 20px;
     border-radius: 12px;
@@ -890,7 +870,7 @@ body {
     font-size: 24px;
     display: block;
     margin-bottom: 8px;
-    animation: bounce 2s infinite; /* পিন বাউন্স অ্যানিমেশন */
+    animation: bounce 2s infinite;
 }
 
 .map-overlay p {
@@ -915,16 +895,14 @@ body {
     background-color: #1d4ed8;
 }
 
-/* ম্যাপ পিনের বাউন্স অ্যানিমেশন */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
 }
 
-/* --- রেসপন্সিভনেস (মোবাইল ও ট্যাব) --- */
 @media (max-width: 900px) {
     .venue-layout {
-        grid-template-columns: 1fr; /* ছোট স্ক্রিনে ম্যাপ নিচে চলে যাবে */
+        grid-template-columns: 1fr;
         gap: 32px;
     }
     
@@ -947,13 +925,12 @@ body {
 /* --- Newsletter Section Styles --- */
 .newsletter-section {
     width: 100%;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* মডার্ন ডার্ক গ্রেডিয়েন্ট */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
 
-/* ব্যাকগ্রাউন্ডে হালকা একটি গ্লো ইফেক্ট যোগ করার জন্য (Optional) */
 .newsletter-section::before {
     content: "";
     position: absolute;
@@ -978,7 +955,7 @@ body {
     max-width: 640px;
     text-align: center;
     position: relative;
-    z-index: 1; /* কন্টেন্ট যাতে গ্লো ইফেক্টের উপরে থাকে */
+    z-index: 1;
 }
 
 .newsletter-title {
@@ -991,12 +968,11 @@ body {
 
 .newsletter-description {
     font-size: 16px;
-    color: #94a3b8; /* হালকা গ্রে টেক্সট */
+    color: #94a3b8;
     line-height: 1.6;
     margin-bottom: 32px;
 }
 
-/* ইনপুট ও বাটনের ফর্ম লেআউট */
 .newsletter-form {
     display: flex;
     gap: 12px;
@@ -1017,12 +993,10 @@ body {
     color: #ffffff;
 }
 
-/* প্লেসহোল্ডারের কালার চেঞ্জ */
 .newsletter-input::placeholder {
     color: #64748b;
 }
 
-/* সাবস্ক্রাইব বাটন */
 .btn-newsletter {
     background-color: #2563eb;
     color: #ffffff;
@@ -1048,7 +1022,6 @@ body {
     color: #64748b;
 }
 
-/* --- রেসপন্সিভনেস (মোবাইল ডিভাইসের জন্য) --- */
 @media (max-width: 600px) {
     .newsletter-section {
         padding: 60px 0;
@@ -1063,7 +1036,6 @@ body {
         margin-bottom: 24px;
     }
 
-    /* মোবাইলে ইনপুট ও বাটন উপর-নিচে চলে আসবে */
     .newsletter-form {
         flex-direction: column;
         background: transparent;
@@ -1110,9 +1082,9 @@ body {
 /* --- Footer Section Styles --- */
 .site-footer {
     width: 100%;
-    background-color: #0b1329; /* ডার্ক থিম ম্যাচিং (প্রো প্রাইসিং কার্ডের মতো গভীর নেভি ব্লু) */
+    background-color: #0b1329;
     padding: 40px 0 30px 0;
-    color: #94a3b8; /* হালকা ছাই রঙের টেক্সট */
+    color: #94a3b8;
 }
 
 .footer-container {
@@ -1121,7 +1093,6 @@ body {
     padding: 0 24px;
 }
 
-/* উপরের অংশ: লোগো ও সোশ্যাল আইকন পাশাপাশি করার জন্য */
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -1136,11 +1107,10 @@ body {
 }
 
 .footer-logo {
-    height: 40px; /* লোগোর হাইট অ্যাডজাস্টমেন্ট */
+    height: 40px;
     object-fit: contain;
 }
 
-/* সোশ্যাল আইকন বক্স */
 .footer-socials {
     display: flex;
     gap: 16px;
@@ -1154,41 +1124,37 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.03); /* ব্যাকগ্রাউন্ডে হালকা সার্কেল গ্লো */
+    background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.2s ease;
 }
 
-/* সোশ্যাল আইকন হোভার ইফেক্ট */
 .social-link:hover {
     color: #ffffff;
-    background-color: #2563eb; /* হোভার করলে ব্র‍্যান্ডের রয়েল ব্লু কালার হবে */
+    background-color: #2563eb;
     border-color: #2563eb;
     transform: translateY(-2px);
 }
 
-/* হরিজন্টাল ডিভাইডার লাইন */
 .footer-divider {
     border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08); /* ডার্ক ব্যাকগ্রাউন্ডের সাথে মানানসই সূক্ষ্ম লাইন */
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     margin: 32px 0 24px 0;
 }
 
-/* নিচের অংশ: কপিরাইট মেসেজ */
 .footer-bottom {
     text-align: center;
 }
 
 .copyright-text {
     font-size: 14px;
-    color: #64748b; /* একটু বেশি হালকা রঙ যাতে ডমিনেন্ট না করে */
+    color: #64748b;
     letter-spacing: 0.3px;
 }
 
-/* --- রেসপন্সিভনেস (মোবাইল স্ক্রিন) --- */
 @media (max-width: 600px) {
     .footer-top {
-        flex-direction: column; /* মোবাইলে লোগো উপরে ও সোশ্যাল আইকন নিচে সেন্টারে আসবে */
+        flex-direction: column;
         text-align: center;
     }
     
@@ -1200,3 +1166,9 @@ body {
         font-size: 13px;
     }
 }
+
+
+
+
+
+/* --- create by Anisur Rahman --- */
