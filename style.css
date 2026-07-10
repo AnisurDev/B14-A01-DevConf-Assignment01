@@ -225,7 +225,6 @@ body {
     padding: 0 24px;
 }
 
-/* সেকশনের মেইন টাইটেল */
 .section-title {
     text-align: center;
     font-size: 42px;
@@ -235,48 +234,43 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* ২ কলাম বিশিষ্ট গ্রিড লেআউট */
 .speakers-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px; /* কার্ডগুলোর ভেতরের গ্যাপ */
+    gap: 32px;
 }
 
-/* স্পিকার কার্ড স্টাইল */
 .speaker-card {
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    overflow: hidden; /* ভেতরের ইমেজ বা এলিমেন্ট যাতে কোনা দিয়ে বের না হয়ে যায় */
+    overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .speaker-card:hover {
-    transform: translateY(-4px); /* হোভার করলে হালকা উপরে উঠবে */
+    transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* কার্ডের ইমেজ এরিয়া */
 .card-image-box {
     width: 100%;
-    height: 280px; /* ইমেজের ফিক্সড উচ্চতা */
+    height: 280px;
     overflow: hidden;
 }
 
 .card-image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ইমেজ যাতে ডিসটর্ট বা চ্যাপ্টা না হয় */
+    object-fit: cover;
     object-position: center;
 }
 
-/* কার্ডের ভেতরের কন্টেন্ট এরিয়া */
 .card-content {
     padding: 24px;
 }
 
-/* ক্যাটাগরি ট্যাগ */
 .speaker-tag {
     display: inline-block;
     font-size: 11px;
@@ -286,13 +280,11 @@ body {
     margin-bottom: 12px;
 }
 
-/* স্ক্রিনশট অনুযায়ী আলাদা ট্যাগের কালার কোড */
 .tag-ai { color: #2563eb; }
 .tag-cloud { color: #2563eb; }
 .tag-frontend { color: #2563eb; }
 .tag-security { color: #2563eb; }
 
-/* স্পিকারের নাম */
 .speaker-name {
     font-size: 20px;
     font-weight: 700;
@@ -300,27 +292,911 @@ body {
     margin-bottom: 6px;
 }
 
-/* স্পিকারের রোল/পদবি */
 .speaker-role {
     font-size: 14px;
-    color: #6b7280; /* হালকা গ্রে কালার */
+    color: #6b7280;
     font-weight: 400;
 }
 
-/* --- রেসপন্সিভনেস (ট্যাবলেট ও মোবাইল) --- */
 @media (max-width: 900px) {
     .speakers-grid {
-        grid-template-columns: 1fr; /* মাঝারি বা ছোট স্ক্রিনে ১ কলামে চলে আসবে */
+        grid-template-columns: 1fr;
         gap: 24px;
     }
     
     .card-image-box {
-        height: 24px; /* ছোট স্ক্রিনে হাইট কিছুটা কমানো */
+        height: 24px;
         height: 250px;
     }
     
     .section-title {
         font-size: 32px;
         margin-bottom: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Pricing Section Styles --- */
+.pricing-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.pricing-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 60px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.pricing-card.card-pro {
+    background-color: #0b1329;
+    border: none;
+    color: #ffffff;
+}
+
+.pricing-card.card-team {
+    background-color: #f8fafc;
+}
+
+.card-header {
+    margin-bottom: 24px;
+}
+
+.plan-name {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.plan-name.text-blue {
+    color: #3b82f6;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.card-pro .plan-price {
+    color: #ffffff;
+}
+
+.plan-duration {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.text-dim {
+    color: #94a3b8;
+}
+
+
+.card-divider {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin-bottom: 32px;
+}
+
+.card-pro .card-divider {
+    border-top: 1px solid #1e293b;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.features-list li {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.card-pro .features-list li {
+    color: #cbd5e1;
+}
+
+.features-list li::before {
+    content: "•";
+    color: #2563eb;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.card-footer {
+    width: 100%;
+}
+
+.btn-plan {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-standard {
+    background-color: #ffffff;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.btn-standard:hover {
+    background-color: #f0f5ff;
+}
+
+
+.btn-pro {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-pro:hover {
+    background-color: #1d4ed8;
+}
+
+
+.btn-team {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid #0f172a;
+}
+
+.btn-team:hover {
+    background-color: #f1f5f9;
+}
+
+
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+        gap: 24px;
+    }
+    
+    .pricing-title {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- FAQ Section Styles --- */
+.faq-section {
+    width: 100%;
+    background-color: #f8fafc; /* হালকা অফ-হোয়াইট ব্যাকগ্রাউন্ড */
+    padding: 100px 0;
+}
+
+.faq-container {
+    max-width: 800px; /* কন্টেন্ট এরিয়া সুন্দর দেখানোর জন্য একটু ন্যারো করা */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* টাইটেল এবং সাবটাইটেল */
+.faq-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.faq-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 60px;
+}
+
+/* FAQ লিস্টের মেইন বক্স */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* প্রতিটা FAQ আইটেম বক্স */
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+/* চেকবক্স হাইড করে রাখার জন্য */
+.faq-toggle {
+    display: none;
+}
+
+/* প্রশ্ন বা লেবেল এরিয়া */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+    color: #2563eb; /* হোভার করলে কোশ্চেন ব্লু হবে */
+}
+
+/* ডান পাশের প্লাস (+) আইকন ডিজাইন */
+.faq-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-icon::before,
+.faq-icon::after {
+    content: "";
+    position: absolute;
+    background-color: #64748b;
+    transition: all 0.3s ease;
+}
+
+/* প্লাস চিহ্নের অনুভূমিক রেখা */
+.faq-icon::before {
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+/* প্লাস চিহ্নের উলম্ব রেখা */
+.faq-icon::after {
+    top: 0;
+    left: 9px;
+    width: 2px;
+    height: 100%;
+}
+
+/* উত্তর বা অ্যানসার এরিয়া (ডিফল্ট অবস্থায় হাইড করা) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* স্মুথ ওপেনিং অ্যানিমেশন */
+    background-color: #ffffff;
+}
+
+.faq-answer p {
+    padding: 0 24px 24px 24px; /* নিচের প্যাডিং দিয়ে টেক্সট সুন্দরভাবে বসানো */
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* --- ট্রিকস: যখন চেকবক্স চেকড হবে --- */
+
+/* ১. প্লাস আইকনটি মাইনাস (-) চিহ্নে রূপান্তরিত হবে */
+.faq-toggle:checked + .faq-question .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-toggle:checked + .faq-question .faq-icon::after {
+    opacity: 0; /* উলম্ব রেখা গায়েব হয়ে যাবে, শুধু অনুভূমিক থাকবে */
+}
+
+/* ২. উত্তরটি স্মুথলি নিচে নেমে আসবে */
+.faq-toggle:checked ~ .faq-answer {
+    max-height: 200px; /* কন্টেন্ট অনুযায়ী আনুমানিক সর্বোচ্চ হাইট */
+}
+
+/* ৩. একটি একটিভ বর্ডার কালার ইফেক্ট */
+.faq-toggle:checked ~ .faq-question {
+    color: #2563eb;
+}
+
+/* --- রেসপন্সিভনেস --- */
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 32px;
+    }
+    .faq-question {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .faq-answer p {
+        padding: 0 20px 20px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Venue Section Styles --- */
+.venue-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.venue-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* টাইটেল এবং সাবটাইটেল */
+.venue-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.venue-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 60px;
+}
+
+/* ২-কলাম গ্রিড লেআউট */
+.venue-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+/* বাম পাশের তথ্য কার্ডগুলো */
+.venue-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-card {
+    display: flex;
+    gap: 20px;
+    background-color: #f8fafc;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.info-icon {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.info-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.info-text p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* ডান পাশের ম্যাপ ডিজাইন */
+.venue-map {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+}
+
+.map-box {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    background-color: #cbd5e1; /* ম্যাপের ব্যাকগ্রাউন্ড কালার */
+    /* ম্যাপের গ্রিড লাইনের মতো একটি ব্যাকগ্রাউন্ড টেক্সচার ইফেক্ট */
+    background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+}
+
+.map-overlay {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+}
+
+.map-pin {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 8px;
+    animation: bounce 2s infinite; /* পিন বাউন্স অ্যানিমেশন */
+}
+
+.map-overlay p {
+    font-size: 14px;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.btn-map {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-map:hover {
+    background-color: #1d4ed8;
+}
+
+/* ম্যাপ পিনের বাউন্স অ্যানিমেশন */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* --- রেসপন্সিভনেস (মোবাইল ও ট্যাব) --- */
+@media (max-width: 900px) {
+    .venue-layout {
+        grid-template-columns: 1fr; /* ছোট স্ক্রিনে ম্যাপ নিচে চলে যাবে */
+        gap: 32px;
+    }
+    
+    .venue-title {
+        font-size: 32px;
+    }
+    
+    .venue-map {
+        min-height: 300px;
+    }
+    
+    .map-box {
+        min-height: 300px;
+    }
+}
+
+
+
+
+/* --- Newsletter Section Styles --- */
+.newsletter-section {
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); /* মডার্ন ডার্ক গ্রেডিয়েন্ট */
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ব্যাকগ্রাউন্ডে হালকা একটি গ্লো ইফেক্ট যোগ করার জন্য (Optional) */
+.newsletter-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.newsletter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-content {
+    max-width: 640px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* কন্টেন্ট যাতে গ্লো ইফেক্টের উপরে থাকে */
+}
+
+.newsletter-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.newsletter-description {
+    font-size: 16px;
+    color: #94a3b8; /* হালকা গ্রে টেক্সট */
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* ইনপুট ও বাটনের ফর্ম লেআউট */
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* প্লেসহোল্ডারের কালার চেঞ্জ */
+.newsletter-input::placeholder {
+    color: #64748b;
+}
+
+/* সাবস্ক্রাইব বাটন */
+.btn-newsletter {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-newsletter:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-newsletter:active {
+    transform: scale(0.98);
+}
+
+.newsletter-note {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* --- রেসপন্সিভনেস (মোবাইল ডিভাইসের জন্য) --- */
+@media (max-width: 600px) {
+    .newsletter-section {
+        padding: 60px 0;
+    }
+
+    .newsletter-title {
+        font-size: 28px;
+    }
+
+    .newsletter-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    /* মোবাইলে ইনপুট ও বাটন উপর-নিচে চলে আসবে */
+    .newsletter-form {
+        flex-direction: column;
+        background: transparent;
+        border: none;
+        padding: 0;
+        gap: 12px;
+    }
+
+    .newsletter-input {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-newsletter {
+        width: 100%;
+        padding: 14px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Footer Section Styles --- */
+.site-footer {
+    width: 100%;
+    background-color: #0b1329; /* ডার্ক থিম ম্যাচিং (প্রো প্রাইসিং কার্ডের মতো গভীর নেভি ব্লু) */
+    padding: 40px 0 30px 0;
+    color: #94a3b8; /* হালকা ছাই রঙের টেক্সট */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* উপরের অংশ: লোগো ও সোশ্যাল আইকন পাশাপাশি করার জন্য */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px; /* লোগোর হাইট অ্যাডজাস্টমেন্ট */
+    object-fit: contain;
+}
+
+/* সোশ্যাল আইকন বক্স */
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.03); /* ব্যাকগ্রাউন্ডে হালকা সার্কেল গ্লো */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.2s ease;
+}
+
+/* সোশ্যাল আইকন হোভার ইফেক্ট */
+.social-link:hover {
+    color: #ffffff;
+    background-color: #2563eb; /* হোভার করলে ব্র‍্যান্ডের রয়েল ব্লু কালার হবে */
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* হরিজন্টাল ডিভাইডার লাইন */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08); /* ডার্ক ব্যাকগ্রাউন্ডের সাথে মানানসই সূক্ষ্ম লাইন */
+    margin: 32px 0 24px 0;
+}
+
+/* নিচের অংশ: কপিরাইট মেসেজ */
+.footer-bottom {
+    text-align: center;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: #64748b; /* একটু বেশি হালকা রঙ যাতে ডমিনেন্ট না করে */
+    letter-spacing: 0.3px;
+}
+
+/* --- রেসপন্সিভনেস (মোবাইল স্ক্রিন) --- */
+@media (max-width: 600px) {
+    .footer-top {
+        flex-direction: column; /* মোবাইলে লোগো উপরে ও সোশ্যাল আইকন নিচে সেন্টারে আসবে */
+        text-align: center;
+    }
+    
+    .footer-divider {
+        margin: 24px 0 20px 0;
+    }
+    
+    .copyright-text {
+        font-size: 13px;
     }
 }
