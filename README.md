@@ -1,8 +1,16 @@
+## Assignment01
 # 🚀 DEVCONF 2026 - Developer Conference Landing Page
 
 DEVCONF 2026 is a modern, clean, and fully responsive landing page designed for a premier developer conference. It features a sleek dark hero section, a speakers showcase, dynamic pricing tables, an interactive pure-CSS FAQ section, venue details, and a newsletter subscription area.
 
+## 🌐 Live Preview & Socials
+
+* 🚀 **[View Live Site](YOUR_LIVE_LINK_HERE)**
+* 👥 **Facebook:** [AnisurDev](https://facebook.com/Anisur.developer)
+* 📺 **YouTube:** [AnisurDev](https://youtube.com/@AnisurDev)
+
 ![DEVCONF 2026 Preview](./ui/DevConf.png)
+## 🌐 Live Preview
 
 ## ✨ Features
 
