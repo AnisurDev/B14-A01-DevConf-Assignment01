@@ -5,7 +5,7 @@ DEVCONF 2026 is a modern, clean, and fully responsive landing page designed for 
 
 ## 🌐 Live Preview & Socials
 
-* 🚀 **[View Live Site](YOUR_LIVE_LINK_HERE)**
+* 🚀 **[View Live Site](https://anisurdev.github.io/B14-A01-DevConf-Assignment01/)**
 * 👥 **Facebook:** [AnisurDev](https://facebook.com/Anisur.developer)
 * 📺 **YouTube:** [AnisurDev](https://youtube.com/@AnisurDev)
 
